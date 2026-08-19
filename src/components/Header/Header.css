@@ -1,6 +1,11 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   width: 100%;
   background-color: var(--color-white);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.06);
 }
 
 .header__container {
@@ -67,8 +72,6 @@
   padding: 0 24px;
 
   border: 1px solid #C62828;
-  border-radius: var(--radius-small);
-
   background-color: #C62828;
   color: var(--color-white);
 
