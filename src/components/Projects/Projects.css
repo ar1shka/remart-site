@@ -1,0 +1,181 @@
+.projects {
+  width: 100%;
+  background-color: #1B1B1A;
+  color: var(--color-white);
+}
+
+.projects__container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 64px 24px 72px;
+}
+
+.projects__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+
+  margin-bottom: 28px;
+}
+
+.projects__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projects__line {
+  display: block;
+
+  width: 34px;
+  height: 2px;
+
+  margin-bottom: 16px;
+
+  background-color: #C9161D;
+}
+
+.projects__title {
+  margin: 0;
+
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.025em;
+
+  color: #C9161D;
+}
+
+.projects__title span {
+  color: var(--color-white);
+}
+
+.projects__description {
+  margin: 14px 0 0;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.projects__link {
+  flex-shrink: 0;
+
+  margin-bottom: 3px;
+
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+
+  transition: color var(--transition);
+}
+
+.projects__link:hover {
+  color: var(--color-white);
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 280px 180px;
+  gap: 8px;
+}
+
+.project {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  color: var(--color-white);
+  border-radius: 10px;
+}
+
+.project--left {
+  grid-row: 1 / 3;
+}
+
+.project--right {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.project--bottom-left {
+  grid-column: 2;
+  grid-row: 2;
+  width: calc(50% - 4px);
+}
+
+.project--bottom-right {
+  grid-column: 2;
+  grid-row: 2;
+  width: calc(50% - 4px);
+  margin-left: calc(50% + 4px);
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.project:hover img {
+  transform: scale(1.03);
+}
+
+.project__overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.55) 30%,
+    rgba(0, 0, 0, 0.18) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.project__info {
+  position: absolute;
+  left: 20px;
+  bottom: 14px;
+  z-index: 1;
+}
+
+.project__info h3 {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.project--left .project__info h3 {
+  font-size: 22px;
+}
+
+.project__info p {
+  margin: 3px 0 0;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.35;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.project--right .project__info,
+.project--bottom-left .project__info,
+.project--bottom-right .project__info {
+  bottom: 10px;
+}
+
+.project--right .project__info p,
+.project--bottom-left .project__info p,
+.project--bottom-right .project__info p {
+  margin-top: 2px;
+}
