@@ -1,0 +1,227 @@
+.founder {
+  width: 100%;
+  background-color: #F3F1ED;
+}
+
+.founder__container {
+  width: 100%;
+  max-width: var(--container-width);
+  min-height: 450px;
+
+  margin: 0 auto;
+  padding: 32px 52px;
+
+  display: grid;
+  grid-template-columns: 326px 1fr;
+  column-gap: 42px;
+
+  background-color: #1D1D1B;
+  color: #FFFFFF;
+}
+
+
+/* =========================
+   ФОТО
+   ========================= */
+
+.founder__photo {
+  width: 326px;
+  height: 341px;
+
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.founder__photo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* =========================
+   КОНТЕНТ
+   ========================= */
+
+.founder__content {
+  min-width: 0;
+  height: 341px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================
+   ЗАГОЛОВОК
+   ========================= */
+
+.founder__top {
+  flex-shrink: 0;
+}
+
+.founder__line {
+  display: block;
+
+  width: 30px;
+  height: 2px;
+
+  margin-bottom: 17px;
+
+  background-color: #C9161D;
+}
+
+.founder__title {
+  margin: 0;
+
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1;
+
+  letter-spacing: -0.025em;
+}
+
+.founder__title span {
+  color: #C9161D;
+}
+
+
+/* =========================
+   ИМЯ
+   ========================= */
+
+.founder__person {
+  margin-top: 25px;
+}
+
+.founder__person h3 {
+  margin: 0;
+
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.founder__person p {
+  margin: 5px 0 0;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================
+   ЦИТАТА
+   ========================= */
+
+.founder__quote {
+  margin-top: 18px;
+  padding-left: 11px;
+
+  border-left: 2px solid #C9161D;
+}
+
+.founder__quote p {
+  max-width: 700px;
+
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+
+  color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* =========================
+   ОПИСАНИЕ
+   ========================= */
+
+.founder__description {
+  max-width: 700px;
+
+  margin: 17px 0 0;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.45;
+
+  color: rgba(255, 255, 255, 0.48);
+}
+
+
+/* =========================
+   СТАТИСТИКА
+   ========================= */
+
+.founder__stats {
+  display: flex;
+  align-items: stretch;
+  margin-top: auto;
+  transform: translateY(20px);
+}
+
+.founder__stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  flex-shrink: 0;
+}
+
+.founder__stat:first-child {
+  width: 123px;
+}
+
+.founder__stat--objects {
+  width: 197px;
+  padding-left: 54px;
+}
+
+.founder__stat--city {
+  flex: 1;
+  padding-left: 36px;
+}
+
+.founder__stat strong {
+  display: block;
+
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.founder__stat span {
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.35;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* =========================
+   КРАСНЫЕ РАЗДЕЛИТЕЛИ
+   ========================= */
+
+.founder__divider {
+  width: 1px;
+  height: 43px;
+
+  flex-shrink: 0;
+
+  background-color: #C9161D;
+}

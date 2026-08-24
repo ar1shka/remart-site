@@ -1,0 +1,268 @@
+.contacts {
+  width: 100%;
+  padding: 120px 0;
+  background: #ffffff;
+}
+
+.contacts__container {
+  width: 1280px;
+  max-width: calc(100% - 80px);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+
+  align-items: stretch;
+}
+
+/* Левая часть */
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contacts__red-line {
+  width: 64px;
+  height: 4px;
+  margin-bottom: 28px;
+
+  background: #e52b2b;
+}
+
+.contacts__title {
+  margin: 0;
+
+  font-family: 'Gilroy', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+
+  color: #111111;
+}
+
+.contacts__details {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  margin-top: 50px;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contacts__label {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+
+  color: #e52b2b;
+}
+
+.contacts__value {
+  margin: 0;
+
+  font-family: 'Gilroy', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.35;
+
+  color: #111111;
+}
+
+.contacts__link {
+  width: fit-content;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.contacts__link:hover {
+  color: #e52b2b;
+}
+
+
+/* Карта */
+
+.contacts__map {
+  width: 100%;
+  height: 480px;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+}
+
+.contacts__map iframe {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+}
+
+.contacts__socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+
+  margin-top: 8px;
+}
+
+.contacts__socials a {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+
+  color: #111111;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.contacts__socials span {
+  font-size: 16px;
+  color: #8c8c8c;
+}
+
+.contacts__socials a:hover {
+  color: #e52b2b;
+}
+
+
+/* Планшет */
+
+@media (max-width: 1100px) {
+  .contacts {
+    padding: 90px 0;
+  }
+
+  .contacts__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .contacts__title {
+    font-size: 52px;
+  }
+
+  .contacts__details {
+    margin-top: 50px;
+  }
+
+  .contacts__map {
+    height: 420px;
+  }
+}
+
+
+/* Телефон */
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: 70px 0;
+  }
+
+  .contacts__container {
+    max-width: calc(100% - 40px);
+
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .contacts__title {
+    font-size: 44px;
+  }
+
+  .contacts__details {
+    margin-top: 40px;
+    gap: 26px;
+  }
+
+  .contacts__value {
+    font-size: 20px;
+  }
+
+  .contacts__map {
+    height: 360px;
+    border-radius: 20px;
+  }
+}
+
+
+/* Маленькие телефоны */
+
+@media (max-width: 480px) {
+  .contacts {
+    padding: 60px 0;
+  }
+
+  .contacts__container {
+    max-width: calc(100% - 32px);
+  }
+
+  .contacts__red-line {
+    width: 50px;
+    height: 3px;
+    margin-bottom: 22px;
+  }
+
+  .contacts__title {
+    font-size: 38px;
+  }
+
+  .contacts__value {
+    font-size: 18px;
+  }
+
+  .contacts__map {
+    height: 300px;
+    border-radius: 16px;
+  }
+
+  .contacts__map-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+
+  margin-top: 18px;
+  padding: 13px 20px;
+
+  background: #e52b2b;
+  color: #ffffff;
+
+  font-family: 'Gilroy', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contacts__map-button:hover {
+  background: #c92323;
+}
+
+.contacts__map-button:active {
+  transform: translateY(1px);
+}
+}

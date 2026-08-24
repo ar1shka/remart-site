@@ -1,0 +1,293 @@
+.faq {
+  width: 100%;
+  background-color: #F3F1ED;
+  color: var(--color-black);
+}
+
+.faq__container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+
+  padding: 64px 68px 72px;
+
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  column-gap: 70px;
+}
+
+
+/* =========================
+   ЛЕВАЯ ЧАСТЬ
+   ========================= */
+
+.faq__intro {
+  align-self: start;
+}
+
+.faq__line {
+  display: block;
+
+  width: 32px;
+  height: 2px;
+
+  margin-bottom: 22px;
+
+  background-color: #C9161D;
+}
+
+.faq__title {
+  margin: 0;
+
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.05;
+
+  letter-spacing: -0.025em;
+}
+
+.faq__title span {
+  color: #C9161D;
+}
+
+.faq__description {
+  max-width: 310px;
+
+  margin: 28px 0 0;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.45;
+
+  color: rgba(17, 17, 17, 0.75);
+}
+
+
+/* Нижний текст и кнопка */
+
+.faq__contact {
+  margin-top: 26px;
+}
+
+.faq__contact p {
+  max-width: 300px;
+
+  margin: 0 0 1px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.45;
+
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.faq__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 118px;
+  height: 40px;
+
+  margin-top: 20px;
+  padding: 0 16px;
+
+  background-color: #C9161D;
+  color: #FFFFFF;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.faq__button:hover {
+  background-color: #A91016;
+}
+
+.faq__button:active {
+  transform: translateY(1px);
+}
+
+
+/* =========================
+   ПРАВАЯ ЧАСТЬ
+   ========================= */
+
+.faq__list {
+  width: 100%;
+}
+
+.faq__item {
+  border-top: 1px solid rgba(17, 17, 17, 0.12);
+}
+
+.faq__item:last-child {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.12);
+}
+
+
+/* Вопрос */
+
+.faq__question {
+  width: 100%;
+  min-height: 50px;
+
+  padding: 0 8px 0 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  border: 0;
+  background: transparent;
+
+  color: var(--color-black);
+
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.faq__question span:first-child {
+  transition: color 0.2s ease;
+}
+
+.faq__question:hover span:first-child {
+  color: #C9161D;
+}
+
+
+/* Плюс / минус */
+
+.faq__icon {
+  position: relative;
+
+  flex-shrink: 0;
+
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #C9161D;
+
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+
+  transition: transform 0.25s ease;
+}
+
+
+/* =========================
+   ОТВЕТ
+   ========================= */
+
+.faq__answer {
+  display: grid;
+  grid-template-rows: 0fr;
+
+  opacity: 0;
+
+  transition:
+    grid-template-rows 0.3s ease,
+    opacity 0.2s ease;
+}
+
+.faq__answer-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.faq__answer p {
+  max-width: 620px;
+
+  margin: 0;
+  padding: 0 45px 0 0;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: rgba(17, 17, 17, 0.58);
+
+  transition: padding 0.3s ease;
+}
+
+
+/* =========================
+   ОТКРЫТЫЙ ВОПРОС
+   ========================= */
+
+.faq__item--open .faq__answer {
+  grid-template-rows: 1fr;
+
+  opacity: 1;
+}
+
+.faq__item--open .faq__answer p {
+  padding-bottom: 17px;
+}
+
+.faq__item--open .faq__icon {
+  transform: rotate(45deg);
+}
+
+
+/* =========================
+   АДАПТИВ
+   ========================= */
+
+@media (max-width: 900px) {
+  .faq__container {
+    padding: 56px 40px 64px;
+
+    grid-template-columns: 260px minmax(0, 1fr);
+    column-gap: 32px;
+  }
+
+  .faq__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .faq__container {
+    padding: 52px 24px 56px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+  }
+
+  .faq__description {
+    max-width: 320px;
+  }
+
+  .faq__contact {
+    margin-top: 24px;
+  }
+
+  .faq__question {
+    min-height: 52px;
+  }
+
+  .faq__answer p {
+    padding-right: 30px;
+  }
+}

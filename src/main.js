@@ -9,6 +9,10 @@ import { About } from './components/About/About'
 import { Services } from './components/Services/Services'
 import { Projects } from './components/Projects/Projects'
 import { Advantages } from './components/Advantages/Advantages'
+import { Founder } from './components/Founder/Founder'
+import { FAQ, initFAQ } from './components/FAQ/FAQ.js'
+import { DiscussProject } from './components/DiscussProject/DiscussProject'
+import { Contacts } from './components/Contacts/Contacts'
 
 document.querySelector('#app').innerHTML = `
   ${Header()}
@@ -17,5 +21,12 @@ document.querySelector('#app').innerHTML = `
   ${Services()}
   ${Projects()}
   ${Advantages()}
+  ${Founder()}
+  ${FAQ()}
+  ${DiscussProject()}
+  ${Contacts()}
   ${Footer()}
+  
 `
+
+initFAQ()
