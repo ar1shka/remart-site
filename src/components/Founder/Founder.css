@@ -6,27 +6,22 @@
 .founder__container {
   width: 100%;
   max-width: var(--container-width);
-  min-height: 450px;
+  min-height: 470px;
 
   margin: 0 auto;
   padding: 32px 52px;
 
   display: grid;
   grid-template-columns: 326px 1fr;
-  column-gap: 42px;
+  column-gap: 49px;
 
   background-color: #1D1D1B;
   color: #FFFFFF;
 }
 
-
-/* =========================
-   ФОТО
-   ========================= */
-
 .founder__photo {
   width: 326px;
-  height: 341px;
+  height: 360px;
 
   overflow: hidden;
   border-radius: 12px;
@@ -41,23 +36,13 @@
   object-fit: cover;
 }
 
-
-/* =========================
-   КОНТЕНТ
-   ========================= */
-
 .founder__content {
   min-width: 0;
-  height: 341px;
+  height: 350px;
 
   display: flex;
   flex-direction: column;
 }
-
-
-/* =========================
-   ЗАГОЛОВОК
-   ========================= */
 
 .founder__top {
   flex-shrink: 0;
@@ -88,11 +73,6 @@
   color: #C9161D;
 }
 
-
-/* =========================
-   ИМЯ
-   ========================= */
-
 .founder__person {
   margin-top: 25px;
 }
@@ -115,11 +95,6 @@
   color: rgba(255, 255, 255, 0.55);
 }
 
-
-/* =========================
-   ЦИТАТА
-   ========================= */
-
 .founder__quote {
   margin-top: 18px;
   padding-left: 11px;
@@ -139,11 +114,6 @@
   color: rgba(255, 255, 255, 0.92);
 }
 
-
-/* =========================
-   ОПИСАНИЕ
-   ========================= */
-
 .founder__description {
   max-width: 700px;
 
@@ -155,11 +125,6 @@
 
   color: rgba(255, 255, 255, 0.48);
 }
-
-
-/* =========================
-   СТАТИСТИКА
-   ========================= */
 
 .founder__stats {
   display: flex;
@@ -211,11 +176,6 @@
 
   color: rgba(255, 255, 255, 0.5);
 }
-
-
-/* =========================
-   КРАСНЫЕ РАЗДЕЛИТЕЛИ
-   ========================= */
 
 .founder__divider {
   width: 1px;

@@ -13,13 +13,28 @@ export function Advantages() {
           </h2>
 
           <p class="advantages__description">
-            Берём на себя весь ремонт от подготовки помещения до
+            Берём на себя весь ремонт от дизайн-проекта до
             финальной уборки. Вы всегда понимаете, что происходит
             на объекте и за что платите
           </p>
         </div>
 
         <div class="advantages__list">
+
+          <article class="advantage">
+            <span class="advantage__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16M4 12h16M4 18h10"/>
+              </svg>
+            </span>
+
+            <h3>Прозрачная смета</h3>
+
+            <p>
+              Фиксируем состав работ и стоимость до начала ремонта.
+              Все изменения согласовываем заранее
+            </p>
+          </article>
 
           <article class="advantage">
             <span class="advantage__icon">
@@ -34,21 +49,6 @@ export function Advantages() {
               Следим за ходом работ и качеством выполнения,
               чтобы вам не приходилось постоянно контролировать
               объект самостоятельно
-            </p>
-          </article>
-
-          <article class="advantage">
-            <span class="advantage__icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4 6h16M4 12h16M4 18h10"/>
-              </svg>
-            </span>
-
-            <h3>Прозрачная смета</h3>
-
-            <p>
-              Фиксируем состав работ и стоимость до начала ремонта.
-              Все изменения согласовываем заранее
             </p>
           </article>
 

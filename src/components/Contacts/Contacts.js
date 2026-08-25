@@ -42,10 +42,10 @@ export function Contacts() {
               </span>
 
               <a
-                href="tel:+70000000000"
+                href="tel:+79200502323"
                 class="contacts__value contacts__link"
               >
-                +7 (000) 000-00-00
+                +7 (920) 050-23-23
               </a>
             </div>
 
@@ -55,10 +55,10 @@ export function Contacts() {
               </span>
 
               <a
-                href="mailto:info@remart.ru"
+                href="mailto:info@remart-nn.ru"
                 class="contacts__value contacts__link"
               >
-                info@remart.ru
+                info@remart-nn.ru
               </a>
             </div>
 

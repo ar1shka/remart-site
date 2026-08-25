@@ -19,7 +19,7 @@ export function Services() {
         <div class="services__grid">
 
           <article class="service">
-            <div class="service__number">01</div>
+            <div class="service__number">1</div>
             <div class="service__content">
               <h3>Дизайн проект</h3>
               <p>
@@ -29,17 +29,17 @@ export function Services() {
           </article>
 
           <article class="service">
-            <div class="service__number">02</div>
+            <div class="service__number">2</div>
             <div class="service__content">
               <h3>Подготовительные работы</h3>
               <p>
-                Делаем демонтаж, защищаем поверхности и подготавливаем помещение к основным работам
+                Производим демонтаж, возводим перегородки, осуществляем устройство стяжки пола
               </p>
             </div>
           </article>
 
           <article class="service">
-            <div class="service__number">03</div>
+            <div class="service__number">3</div>
             <div class="service__content">
               <h3>Сантехнические работы</h3>
               <p>
@@ -49,51 +49,50 @@ export function Services() {
           </article>
 
           <article class="service">
-            <div class="service__number">04</div>
+            <div class="service__number">4</div>
             <div class="service__content">
               <h3>Электромонтажные работы</h3>
               <p>
-                Разводим электрику, устанавливаем розетки и выключатели, подготавливаем освещение
-              </p>
+                Производим монтаж электрического кабеля и электроточек, устанавливаем розетки и выключатели
             </div>
           </article>
 
           <article class="service">
-            <div class="service__number">05</div>
+            <div class="service__number">5</div>
             <div class="service__content">
-              <h3>Отделочные работы</h3>
+              <h3>Штукатурные работы</h3>
               <p>
-                Выравниваем стены и потолки, работаем с полами и выполняем основные отделочные работы
+                Подготавливаем плоскости и поверхности, выравниваем стены и потолки
               </p>
             </div>
           </article>
 
           <article class="service">
-            <div class="service__number">06</div>
+            <div class="service__number">6</div>
             <div class="service__content">
               <h3>Малярные работы</h3>
               <p>
-                Шпаклюем, грунтуем и окрашиваем поверхности, чтобы стены и потолки выглядели идеально
+                Шпаклюем, грунтуем и окрашиваем поверхности, наносим декоративное покрытие
               </p>
             </div>
           </article>
 
           <article class="service">
-            <div class="service__number">07</div>
+            <div class="service__number">7</div>
             <div class="service__content">
               <h3>Облицовочные работы</h3>
               <p>
-                Укладываем плитку, керамогранит и другие материалы на любые поверхности
+                Укладываем плитку, паркет, ламинат, панели в соответствии с дизайн-проектом
               </p>
             </div>
           </article>
 
           <article class="service">
-            <div class="service__number">08</div>
+            <div class="service__number">8</div>
             <div class="service__content">
               <h3>Финишные работы</h3>
               <p>
-                Устанавливаем чистовые элементы, вывозим строительный мусор и приводим помещение в порядок
+                Устанавливаем чистовые элементы, мебель, декор, и приводим помещение в порядок
               </p>
             </div>
           </article>

@@ -7,7 +7,7 @@ export function Founder() {
 
         <div class="founder__photo">
           <img
-            src="src/assets/founder.jpg"
+            src="src/assets/owner.png"
             alt="Алексей Лазарев"
           />
         </div>
@@ -43,9 +43,9 @@ export function Founder() {
           <div class="founder__stats">
 
             <div class="founder__stat">
-              <strong>XX</strong>
+              <strong>23</strong>
               <span>
-                лет<br>
+                года<br>
                 в строительстве
               </span>
             </div>
@@ -53,10 +53,10 @@ export function Founder() {
             <div class="founder__divider"></div>
 
             <div class="founder__stat founder__stat--objects">
-              <strong>XXX</strong>
+              <strong>51</strong>
               <span>
-                реализованных<br>
-                объектов
+                реализованный<br>
+                объект
               </span>
             </div>
 

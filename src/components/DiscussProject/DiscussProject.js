@@ -21,7 +21,7 @@ export function DiscussProject() {
 
           <div class="discuss-project__phone">
             <a href="tel:+7XXXXXXXXXX">
-              +7 XXX XXX XX XX
+              +7 (920) 050-23-23
             </a>
 
             <span>
