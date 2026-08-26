@@ -27,7 +27,7 @@ export function Projects() {
 
           <a href="#" class="project project--large project--left">
             <img
-              src="/src/assets/projects/project-54.jpg"
+              src="/src/assets/projects/1.png"
               alt="Квартира 54 м²"
             >
 
@@ -41,7 +41,7 @@ export function Projects() {
 
           <a href="#" class="project project--large project--right">
             <img
-              src="/src/assets/projects/project-86.jpg"
+              src="/src/assets/projects/2.png"
               alt="Квартира 86 м²"
             >
 
@@ -55,7 +55,7 @@ export function Projects() {
 
           <a href="#" class="project project--small project--bottom-left">
             <img
-              src="/src/assets/projects/project-42.jpg"
+              src="/src/assets/projects/3.png"
               alt="Квартира 42 м²"
             >
 
@@ -69,7 +69,7 @@ export function Projects() {
 
           <a href="#" class="project project--small project--bottom-right">
             <img
-              src="/src/assets/projects/project-67.jpg"
+              src="/src/assets/projects/4.jpg"
               alt="Квартира 67 м²"
             >
 

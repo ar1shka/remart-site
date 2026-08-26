@@ -11,7 +11,10 @@ import { Projects } from './components/Projects/Projects'
 import { Advantages } from './components/Advantages/Advantages'
 import { Founder } from './components/Founder/Founder'
 import { FAQ, initFAQ } from './components/FAQ/FAQ.js'
-import { DiscussProject } from './components/DiscussProject/DiscussProject'
+import {
+  DiscussProject,
+  initDiscussProject
+} from './components/DiscussProject/DiscussProject'
 import { Contacts } from './components/Contacts/Contacts'
 
 document.querySelector('#app').innerHTML = `
@@ -30,3 +33,4 @@ document.querySelector('#app').innerHTML = `
 `
 
 initFAQ()
+initDiscussProject()

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>РемАрт — Заявки</title>
+
+  <link rel="stylesheet" href="/src/admin.css">
+</head>
+
+<body>
+
+  <main class="admin">
+
+    <!-- HEADER -->
+
+    <header class="admin-header">
+
+      <div class="admin-header__top">
+
+        <div>
+          <a
+            class="admin-header__logo"
+            href="/"
+          >
+            РЕМАРТ
+          </a>
+
+          <p class="admin-header__subtitle">
+            Панель управления заявками
+          </p>
+        </div>
+
+        <div class="admin-header__actions">
+
+          <a
+            class="admin-header__site-link"
+            href="/"
+          >
+            На сайт
+            <span>↗</span>
+          </a>
+
+          <button
+            class="admin-header__logout"
+            id="logout-button"
+            type="button"
+          >
+            Выйти
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="admin-header__bottom">
+
+        <div>
+
+          <span class="admin-header__label">
+            Обращения клиентов
+          </span>
+
+          <h1 class="admin-header__title">
+            Заявки
+          </h1>
+
+        </div>
+
+
+        <div class="admin-header__stats">
+
+          <div class="admin-header__stat">
+
+            <strong id="applications-count">
+              0
+            </strong>
+
+            <span>
+              всего заявок
+            </span>
+
+          </div>
+
+
+          <div class="admin-header__stat admin-header__stat--new">
+
+            <strong id="new-applications-count">
+              0
+            </strong>
+
+            <span>
+              новых
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- APPLICATIONS -->
+
+    <section class="applications">
+
+      <div class="applications__top">
+
+        <h2 class="applications__title">
+          Все обращения
+        </h2>
+
+        <button
+          class="applications__refresh"
+          id="refresh-applications"
+          type="button"
+        >
+          Обновить
+          <span>↻</span>
+        </button>
+
+      </div>
+
+
+      <!-- FILTERS -->
+
+      <div class="applications__filters">
+
+        <div class="applications__search">
+
+          <span class="applications__search-icon">
+            ⌕
+          </span>
+
+          <input
+            id="applications-search"
+            type="search"
+            placeholder="Поиск по заявкам..."
+            autocomplete="off"
+          >
+
+        </div>
+
+
+        <select
+          class="applications__filter"
+          id="status-filter"
+        >
+          <option value="all">
+            Все статусы
+          </option>
+
+          <option value="Новая">
+            Новые
+          </option>
+
+          <option value="В работе">
+            В работе
+          </option>
+
+          <option value="Завершена">
+            Завершённые
+          </option>
+        </select>
+
+
+        <select
+          class="applications__filter"
+          id="date-sort"
+        >
+          <option value="newest">
+            Сначала новые
+          </option>
+
+          <option value="oldest">
+            Сначала старые
+          </option>
+        </select>
+
+
+        <button
+          class="applications__reset"
+          id="reset-filters"
+          type="button"
+        >
+          Сбросить
+        </button>
+
+      </div>
+
+
+      <!-- RESULT INFO -->
+
+      <div class="applications__result-info">
+
+        <span id="applications-result">
+          Показано 0 заявок
+        </span>
+
+      </div>
+
+
+      <!-- TABLE -->
+
+      <div class="applications__table-wrapper">
+
+        <table class="applications__table">
+
+          <thead>
+
+            <tr>
+              <th>Дата</th>
+              <th>Имя</th>
+              <th>Телефон</th>
+              <th>Что нужно сделать?</th>
+              <th>Статус</th>
+            </tr>
+
+          </thead>
+
+          <tbody id="applications-list">
+          </tbody>
+
+        </table>
+
+      </div>
+
+
+      <!-- EMPTY -->
+
+      <div
+        class="applications__empty"
+        id="applications-empty"
+      >
+        Заявок пока нет
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script
+    type="module"
+    src="/src/admin.js"
+  ></script>
+
+</body>
+</html>
