@@ -18,18 +18,33 @@ import {
 import { Contacts } from './components/Contacts/Contacts'
 
 document.querySelector('#app').innerHTML = `
-  ${Header()}
-  ${Hero()}
-  ${About()}
-  ${Services()}
-  ${Projects()}
-  ${Advantages()}
-  ${Founder()}
-  ${FAQ()}
-  ${DiscussProject()}
-  ${Contacts()}
-  ${Footer()}
-  
+
+  <div class="site">
+
+    ${Header()}
+
+    ${Hero()}
+
+    ${About()}
+
+    ${Services()}
+
+    ${Projects()}
+
+    ${Advantages()}
+
+    ${Founder()}
+
+    ${FAQ()}
+
+    ${DiscussProject()}
+
+    ${Contacts()}
+
+    ${Footer()}
+
+  </div>
+
 `
 
 initFAQ()

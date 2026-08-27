@@ -1,20 +1,28 @@
 .about {
   width: 100%;
-  background-color: #0B0B0D;
+  background-color: #F3F1ED;
   color: var(--color-white);
 }
 
 .about__container {
-  width: 100%;
-  max-width: var(--container-width);
+  width: calc(100% - 48px);
+  max-width: 1400px;
   min-height: 430px;
 
   margin: 0 auto;
-  padding: 58px 24px 52px;
+  padding: 58px 52px 52px;
 
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   column-gap: 100px;
+
+  background-color: #0B0B0D;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.14),
+    0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .about__content {
@@ -39,6 +47,7 @@
   font-size: 42px;
   font-weight: 700;
   line-height: 1.08;
+
   letter-spacing: -0.025em;
 }
 
@@ -59,6 +68,7 @@
 .about__steps {
   display: flex;
   flex-direction: column;
+
   padding-top: 5px;
 }
 
@@ -68,6 +78,7 @@
 
 .about__step + .about__step {
   padding-top: 15px;
+
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -80,6 +91,7 @@
 .about__step-title span {
   font-size: 20px;
   font-weight: 500;
+
   color: #C9161D;
 }
 
