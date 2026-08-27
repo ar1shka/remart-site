@@ -8,7 +8,7 @@
   width: 100%;
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 72px 0px 80px;
+  padding: 60px 0px 60px;
 
   display: grid;
   grid-template-columns: minmax(320px, 0.8fr) minmax(700px, 1.2fr);
@@ -22,9 +22,10 @@
 
 .advantages__line {
   display: block;
-  width: 34px;
-  height: 2px;
-  margin-bottom: 16px;
+  width: 64px;
+  height: 4px;
+
+  margin-bottom: 28px;
   background-color: #C9161D;
 }
 

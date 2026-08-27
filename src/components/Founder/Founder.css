@@ -58,10 +58,10 @@
 .founder__line {
   display: block;
 
-  width: 30px;
-  height: 2px;
+  width: 64px;
+  height: 4px;
 
-  margin-bottom: 17px;
+  margin-bottom: 28px;
 
   background-color: #C9161D;
 }

@@ -37,7 +37,7 @@ document.querySelector('#app').innerHTML = `
 
     ${FAQ()}
 
-    ${DiscussProject()}
+    
 
     ${Contacts()}
 

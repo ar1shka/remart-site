@@ -6,10 +6,10 @@
 
 .projects__container {
   width: calc(100% - 48px);
-  max-width: 1400px;
+  max-width: 1300px;
 
   margin: 0 auto;
-  padding: 64px 52px 72px;
+  padding: 44px 52px 72px;
 
   background-color: #1B1B1A;
 
@@ -38,10 +38,10 @@
 .projects__line {
   display: block;
 
-  width: 34px;
-  height: 2px;
+  width: 64px;
+  height: 4px;
 
-  margin-bottom: 16px;
+  margin-bottom: 28px;
 
   background-color: #C9161D;
 }

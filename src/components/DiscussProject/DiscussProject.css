@@ -20,10 +20,10 @@
 .discuss-project__line {
   display: block;
 
-  width: 32px;
-  height: 2px;
+  width: 64px;
+  height: 4px;
 
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 
   background-color: #C9161D;
 }
